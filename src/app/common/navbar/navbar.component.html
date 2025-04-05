@@ -1,0 +1,21 @@
+<div class="flex w-full py-2 items-center">
+  <div class="flex flex-1 gap-7 nav-container">
+    <span class="text-3xl uppercase font-bolt"> bat4you </span>
+    <div class="flex gap-5 items-center">
+      <a
+        *ngFor="let link of links"
+        [ngClass]="{
+          'text-lg capitalize h-full flex items-center px-3': true,
+          'border-b-2 text-gray-900': activeLink == link,
+          'text-gray-600': activeLink != link
+        }"
+        href="{{ link }}"
+        (click)="activeLink = link"
+      >
+        {{ link }}
+      </a>
+    </div>
+  </div>
+  <mat-icon matBadge="15"> shopping_cart </mat-icon>
+  <!-- the matBadge steel need fix -->
+</div>

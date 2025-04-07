@@ -1,0 +1,22 @@
+<div class="">
+  <div class="py-10">
+    <div class="flex flex-col gap-2">
+      <h2 class="text-4xl font-bold">Browse Beats</h2>
+      <span class="text-lg text-gray-600"
+        >Find the perfect instrumental for you next track.</span
+      >
+    </div>
+    <div>
+      <div class="w-[250px]">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full p-2 bg-gray-100 rounded"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 2xl:grid-cols-3">
+    <app-beat-card *ngFor="let beat of beats" [beat]="beat" />
+  </div>
+</div>

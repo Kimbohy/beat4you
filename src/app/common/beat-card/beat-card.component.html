@@ -1,0 +1,29 @@
+<div class="flex flex-col gap-3">
+  <div class="relative w-fit min-w-[400px]">
+    <img
+      [src]="imageUrl"
+      [alt]="beat.title"
+      class="w-[500px] rounded-lg h-[333px]"
+    />
+    <span
+      class="absolute top-4 right-4 z-10 bg-white/90 p-0.5 w-20 text-center rounded-full"
+    >
+      ${{ beat.price }}</span
+    >
+    <div class="absolute bottom-2 left-4 z-10 flex gap-2">
+      <span
+        *ngFor="let tag of beat.tags"
+        class="backdrop-blur-sm rounded-full py-0.5 text-center text-white bg-black/25 capitalize px-4"
+      >
+        {{ tag }}
+      </span>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-xl">{{ beat.title }}</h3>
+    <div class="text-gray-500 text-sm flex gap-5">
+      <span> {{ beat.BPM }} BPM </span>
+      <span> Key: {{ beat.Key }} </span>
+    </div>
+  </div>
+</div>

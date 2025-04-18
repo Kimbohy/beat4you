@@ -1,12 +1,14 @@
 <div class="bg-[url(/landing.jpg)] bg-cover min-h-screen">
-  <div class="flex flex-col bg-white/70 min-h-screen px-[100px]">
+  <div
+    class="flex flex-col bg-white/70 min-h-screen px-[20px] md:px-[100px] pb-5"
+  >
     <app-navbar />
     <div class="flex-1 flex flex-col gap-3 justify-center">
-      <h1 class="text-6xl font-bold">
+      <h1 class="text-4xl md:text-6xl font-bold">
         Premium Beats For Your <br />
         Next Project
       </h1>
-      <p class="text-2xl text-gray-600">
+      <p class="text-xl md:text-2xl text-gray-600">
         High-quality instrumentals crafted with precision. <br />
         Find the perfect sound to elevate your music.
       </p>
@@ -18,8 +20,11 @@
         Browse Beats
       </button>
     </div>
+    <div class="w-full flex justify-center">
+      <mat-icon>arrow_downward</mat-icon>
+    </div>
   </div>
 </div>
-<div class="px-[100px]">
+<div class="px-[20px] md:px-[100px]">
   <app-beats-pages />
 </div>

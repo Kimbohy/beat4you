@@ -4,6 +4,7 @@ import {
   Beats,
 } from '../../../common/beat-card/beat-card.component';
 import { CommonModule } from '@angular/common';
+import { MatIconModule } from '@angular/material/icon';
 
 const beats: Beats[] = [
   {
@@ -59,7 +60,7 @@ const beats: Beats[] = [
 
 @Component({
   selector: 'app-beats-pages',
-  imports: [CommonModule, BeatCardComponent],
+  imports: [CommonModule, BeatCardComponent, MatIconModule],
   templateUrl: './beats-pages.component.html',
   styleUrl: './beats-pages.component.css',
 })
